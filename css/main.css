@@ -490,6 +490,7 @@
   font-weight: 500;
   color: var(--text-color);
   align-items: center;
+  margin-bottom: 0;
 }
 .btn {
   outline: none;
@@ -515,12 +516,12 @@
 
 /* mobile */
 @media only screen and (max-width: 740px) {
+  .nav-lefts{
+    display: none;
+  }
   /* InfoAccount */
   .info {
     display: initial;
-  }
-  .wrapper {
-    padding: 10px;
   }
   .info__welcome {
     width: 100%;
@@ -548,6 +549,9 @@
   }
 
   /* Cart*/
+  .wrapper{
+    padding: 10px;
+  }
   .cart__info {
     display: initial;
   }
@@ -557,14 +561,17 @@
   .cart__info-prices {
     width: 100%;
   }
+  .cart__info-price{
+    margin-bottom: 5px;
+  }
   .cart__info-promo {
     width: 100%;
   }
-  .cart__total-prices {
-    margin-bottom: 10px;
+  .cart__total-prices{
+    margin-bottom: 5px;
   }
-  .wrapper {
-    padding: 15px;
+  .cart__total-prices p{
+    margin-bottom: 0;
   }
 }
 /* tablet */
