@@ -14,9 +14,11 @@ window.addEventListener("load", function () {
 
     const topBar = navToggle.parentElement.parentElement;
     if (heightScroll > headerHeight) {
-      navToggle.classList.add("active");
+      // navToggle.classList.add("active");
+      navToggle.style.transform = "translateY(100%)";
     } else {
-      navToggle.classList.remove("active");
+      navToggle.style.transform = "translateY(-100%)";
+      // navToggle.classList.remove("active");
     }
   });
 

@@ -28,23 +28,29 @@
   </head>
   <body>
     <section id="topbar">
-      <ul
-        class="d-none d-md-flex d-lg-flex col-12 col-lg-auto me-lg-auto justify-content-end mb-2 mb-md-0 bg-dark"
-      >
-        <li>
-          <a href="#" class="nav-link px-2 text-white">KIỂM TRA ĐƠN HÀNG</a>
-        </li>
-        <li><a href="#" class="nav-link px-2 text-white">ĐĂNG NHẬP</a></li>
-        <li><a href="#" class="nav-link px-2 text-white">ĐĂNG KÝ</a></li>
-      </ul>
+        <div
+          class="d-none d-md-flex d-lg-flex col-12 col-lg-auto me-lg-auto justify-content-end mb-2 mb-md-0 bg-dark"
+        >
+      <div class="container">
+
+          <ul class="d-flex justify-content-end">
+            <li>
+              <a href="#" class="nav-link px-2 text-white">KIỂM TRA ĐƠN HÀNG</a>
+            </li>
+            <li><a href="#" class="nav-link px-2 text-white">ĐĂNG NHẬP</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">ĐĂNG KÝ</a></li>
+          </ul>
+
+        </div>
+        </div>
       <header class="p-3 text-white header position-relative">
         <div class="container">
           <div
-            class="d-flex justify-content-lg-between align-items-center justify-content-md-between justify-content-sm-between gap-2"
+            class="d-flex justify-content-center justify-content-lg-between align-items-center justify-content-md-between  gap-4"
           >
               <a
                 href="#!" 
-                class="mb-lg-0 text-white text-decoration-none"
+                class="mb-lg-0 text-white text-decoration-none logo"
               >
                 <img
                   src="./img/logo-removebg.png"
@@ -53,10 +59,10 @@
                   style="object-fit: cover"
                 />
               </a>
-            <form class="position-relative">
+            <form class="position-relative form-search">
               <input
                 type="text"
-                class="form-search"
+                class="form-input"
                 placeholder="Tìm kiếm sản phẩm..."
               />
               <button class="search-icon">
@@ -68,8 +74,9 @@
             <!-- <div class="d-flex align-items-center  cart"> -->
               <a href="#" class="text-decoration-none text-white icon-cart fs-md-1">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span class="quantity-cart">20</span>
               </a>
-              <span class="d-flex align-items-center fs-lg-5 fs-md-1 fw-bold">
+              <span class="d-lg-flex d-md-flex align-items-center fs-lg-5 fs-md-1 fw-bold contact">
                 <i
                   class="fa fa-volume-control-phone icon-cart fs-md-1"
                   aria-hidden="true"
@@ -78,10 +85,10 @@
             </div>
           </div>
         </div>
-        <nav class="nav-extend pt-4 nav-toggle">
+        <nav class="nav-extend pt-3 nav-toggle">
           <div class="container">
-            <div class="d-flex align-items-center gap-5">
-              <div class="dropdown">
+            <div class="d-flex align-items-center flex-center">
+              <div class="dropdown me-3">
                 <a
                   class="dropdown-toggle text-decoration-none text-white "
                   href="#"
@@ -107,7 +114,7 @@
                     aria-current="page"
                     href="#"
                   >
-                    <img src="./img/coupon.png" alt="" width="30" height="30" />
+                    <img src="./img/coupon.png" alt="" width="30" height="30" class="nav-img"/>
                     Mã Giảm Giá</a
                   >
                 </li>
@@ -116,7 +123,7 @@
                     class="nav-link d-flex align-items-center text-white gap-2 fw-normal"
                     href="#"
                   >
-                    <img src="./img/tintuc.png" alt="" width="30" height="30" />
+                    <img src="./img/tintuc.png" alt="" width="30" height="30" class="nav-img"/>
                     Tin Tức</a
                   >
                 </li>
@@ -130,7 +137,7 @@
                       alt=""
                       width="30"
                       height="30"
-                      class="mr-2"
+                      class="mr-2 nav-img"
                     />
                     FL<span class="flash-sale">⚡</span>SH SALE</a
                   >
@@ -250,7 +257,7 @@
       <div class="container">
         <div class="flash-container pb-3">
           <div
-            class="d-flex align-items-center justify-content-between bg-white p-3"
+            class="d-flex align-items-center justify-content-between bg-flash"
           >
             <div
               class="flash-title p-3 d-flex align-items-center justify-content-between gap-4"
@@ -258,12 +265,12 @@
               <div class="position-relative">
                 <img
                   src="https://theme.hstatic.net/1000343028/1000824661/14/flash-sale.svg?v=337"
-                  alt="flash-sale"
+                  alt="flash-sale" class="flash-img"
                 />
                 <img
                   src="https://theme.hstatic.net/1000343028/1000824661/14/bolt.svg?v=337"
                   alt=""
-                  class="flash"
+                  class="flash flash-img"
                 />
               </div>
               <!-- <div class="countdown" data-time="Tue May 31 2022 07:27:45"> -->
@@ -282,8 +289,9 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="text-reset"
-              >Xem toàn bộ sản phẩm
+            <a href="#" class="text-reset text-decoration-none extend pr-2">
+              <span class="extend-md">Xem toàn bộ sản phẩm</span>
+              <span class="extend_small">Xem thêm</span>
               <i class="fa fa-angle-right" aria-hidden="true"></i>
             </a>
           </div>
