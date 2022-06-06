@@ -219,8 +219,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
-  flex-wrap: wrap;
-  grid-auto-flow: column;
 }
 .payment-item {
   width: 85px;
@@ -655,9 +653,6 @@
     font-weight: 600;
     font-size: 12px;
   }
-  .dropdown {
-    display: none;
-  }
   .flash-img {
     width: 80px;
     height: 20px;
@@ -702,7 +697,9 @@
   .nav-img {
     display: none;
   }
-
+  .nav-toggle {
+    /* top: -43%; */
+  }
   .extend .extend-md {
     display: none;
   }
