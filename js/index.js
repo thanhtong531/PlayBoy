@@ -7,6 +7,13 @@ const hoursText = document.querySelector(".hours");
 const minutesText = document.querySelector(".minutes");
 const secondsText = document.querySelector(".seconds");
 const timeCountDown = countDown.dataset.time;
+const callToACtionbtns = document.querySelectorAll("order__info-item");
+callToACtionbtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    callToACtionbtns.forEach((el) => el.classList.remove("border"));
+    e.target.classList.toggle("border");
+  });
+});
 
 window.addEventListener("load", function () {
   window.addEventListener("scroll", function (e) {
