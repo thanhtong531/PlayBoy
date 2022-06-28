@@ -618,37 +618,37 @@
   cursor: pointer;
 }
 /* Thong tin tk*/
-.myaccount{
+.myaccount {
   display: flex;
   margin-bottom: 48px;
 }
-.myaccount__img{
+.myaccount__img {
   width: 50px;
   height: auto;
 }
-.myaccount__img img{
+.myaccount__img img {
   width: 100%;
   border-radius: 50%;
 }
-.myaccount__content{
+.myaccount__content {
   margin-left: 18px;
   margin-right: 45px;
 }
-.myaccount__content p{
+.myaccount__content p {
   font-size: 15px;
   color: var(--text-color);
 }
-.myaccount__content a{
+.myaccount__content a {
   text-decoration: none;
-  color:#888;
+  color: #888;
 }
-.wrapper{
+.wrapper {
   display: flex;
 }
-.order__info{
+.order__info {
   width: 100%;
 }
-.order__info-content{
+.order__info-content {
   width: 100%;
   position: sticky;
   z-index: 10;
@@ -659,7 +659,7 @@
   margin-bottom: 10px;
   display: flex;
 }
-.order__info-content a{
+.order__info-content a {
   text-decoration: none;
   color: var(--text-color);
   font-size: 17px;
@@ -669,17 +669,22 @@
   display: flex;
   flex: 1;
 }
-.order__info-content a:hover{
+.order__info-content a:hover {
   color: var(--primary-color);
   transition: 0.4s;
 }
 
-.border{
+.order__info-item.border {
   border-bottom: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
 
-.order__info-checkall{
+/* .border {
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+} */
+
+.order__info-checkall {
   width: 100%;
   background-color: var(--white-color);
   height: 40px;
@@ -687,13 +692,12 @@
   padding: 10px;
   margin-bottom: 2px;
 }
-.order__info-checkall p{
+.order__info-checkall p {
   color: rgb(179, 178, 178);
   display: flex;
   justify-content: flex-end;
-
 }
-.order__info-product{
+.order__info-product {
   display: flex;
   background-color: #fff;
   padding: 20px;
@@ -701,32 +705,32 @@
   justify-content: space-around;
   cursor: pointer;
 }
-.order__info-product:hover{
+.order__info-product:hover {
   background-color: #f1f1f1;
 }
 
-.order__info-product-img{
+.order__info-product-img {
   width: 100px;
 }
-.order__info-product-img img{
+.order__info-product-img img {
   width: 100%;
 }
 
-.order__info-para h3{
+.order__info-para h3 {
   color: var(--text-color);
   margin-bottom: 15px;
 }
-.order__info-para p{
+.order__info-para p {
   color: var(--text-color);
 }
-.order__info-btn button{
+.order__info-btn button {
   width: 100px;
   border: 1px solid var(--border-color);
   background-color: #fff;
 }
-.order__info-btn button:hover{
+.order__info-btn button:hover {
   color: var(--primary-color);
-  border-color: var(--primary-color) ;
+  border-color: var(--primary-color);
 }
 
 /* mobile */
