@@ -1,11 +1,12 @@
 const header = document.querySelector("#topbar");
-const headerHeight = header.clientHeight;
+const headerHeight = header?.clientHeight;
 const navToggle = document.querySelector(".nav-toggle");
 const countDown = document.querySelector(".countdown");
 const daysText = document.querySelector(".days");
 const hoursText = document.querySelector(".hours");
 const minutesText = document.querySelector(".minutes");
 const secondsText = document.querySelector(".seconds");
+<<<<<<< HEAD
 const timeCountDown = countDown.dataset.time;
 const callToACtionbtns = document.querySelectorAll(".order__info-item");
 const showInfoOrder = document.querySelector(".product-show-order");
@@ -17,10 +18,14 @@ showInfoOrder.addEventListener("click",()=>{
 
 
 
+=======
+const timeCountDown = countDown?.dataset.time;
+const callToACtionbtns = document.querySelectorAll(".order__info-item");
+>>>>>>> 5abe44e71aa141a6f5ec6ea62b0deeb2648141e6
 callToACtionbtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     callToACtionbtns.forEach((el) => el.classList.remove("border"));
-    e.target.classList.toggle("border");
+    e.target.classList.add("border");
   });
 });
 
@@ -28,7 +33,7 @@ window.addEventListener("load", function () {
   window.addEventListener("scroll", function (e) {
     const heightScroll = window.pageYOffset;
 
-    const topBar = navToggle.parentElement.parentElement;
+    const topBar = navToggle?.parentElement.parentElement;
     if (heightScroll > headerHeight) {
       // navToggle.classList.add("active");
       navToggle.style.transform = "translateY(100%)";
@@ -71,5 +76,7 @@ window.addEventListener("load", function () {
       secondsText.textContent = seconds >= 10 ? seconds : `0${seconds}`;
     }
   }
-  countdown(timeCountDown);
+  if (timeCountDown) {
+    countdown(timeCountDown);
+  }
 });
