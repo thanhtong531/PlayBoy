@@ -6,7 +6,6 @@ const daysText = document.querySelector(".days");
 const hoursText = document.querySelector(".hours");
 const minutesText = document.querySelector(".minutes");
 const secondsText = document.querySelector(".seconds");
-<<<<<<< HEAD
 const timeCountDown = countDown.dataset.time;
 const callToACtionbtns = document.querySelectorAll(".order__info-item");
 const showInfoOrder = document.querySelector(".product-show-order");
@@ -18,10 +17,6 @@ showInfoOrder.addEventListener("click",()=>{
 
 
 
-=======
-const timeCountDown = countDown?.dataset.time;
-const callToACtionbtns = document.querySelectorAll(".order__info-item");
->>>>>>> 5abe44e71aa141a6f5ec6ea62b0deeb2648141e6
 callToACtionbtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     callToACtionbtns.forEach((el) => el.classList.remove("border"));
