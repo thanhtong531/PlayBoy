@@ -6,16 +6,22 @@ const daysText = document.querySelector(".days");
 const hoursText = document.querySelector(".hours");
 const minutesText = document.querySelector(".minutes");
 const secondsText = document.querySelector(".seconds");
-const timeCountDown = countDown.dataset.time;
+const timeCountDown = countDown?.dataset.time;
 const callToACtionbtns = document.querySelectorAll(".order__info-item");
 const showInfoOrder = document.querySelector(".product-show-order");
 const productShow = document.querySelector(".product__pay");
-showInfoOrder.addEventListener("click",()=>{
-  console.log(productShow)
-  productShow.style.display = "block";
-})
+const codeSaleLabel = document.querySelectorAll(".code__sale-label");
+// showInfoOrder.addEventListener("click", () => {
+//   console.log(productShow);
+//   productShow.style.display = "block";
+// });
 
-
+codeSaleLabel.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    codeSaleLabel.forEach((el) => el.classList.remove("active"));
+    event.target.classList.add("active");
+  });
+});
 
 callToACtionbtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
