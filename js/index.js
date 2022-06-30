@@ -7,7 +7,16 @@ const hoursText = document.querySelector(".hours");
 const minutesText = document.querySelector(".minutes");
 const secondsText = document.querySelector(".seconds");
 const timeCountDown = countDown.dataset.time;
-const callToACtionbtns = document.querySelectorAll("order__info-item");
+const callToACtionbtns = document.querySelectorAll(".order__info-item");
+const showInfoOrder = document.querySelector(".product-show-order");
+const productShow = document.querySelector(".product__pay");
+showInfoOrder.addEventListener("click",()=>{
+  console.log(productShow)
+  productShow.style.display = "block";
+})
+
+
+
 callToACtionbtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     callToACtionbtns.forEach((el) => el.classList.remove("border"));
