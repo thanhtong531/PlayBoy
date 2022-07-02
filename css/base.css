@@ -48,8 +48,7 @@
     overflow-wrap: break-word;
   }
   ul,
-  li,
-  ol {
+  li{
     margin: 0;
     padding: 0;
     list-style: none;

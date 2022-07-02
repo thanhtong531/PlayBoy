@@ -1106,6 +1106,154 @@
 .product-hidden-order{
   display: none;
 }
+
+/* CSs tin tức*/
+.news{
+  width: 100%;
+}
+.news__link{
+  display: flex;
+}
+.news__link a{
+  text-decoration: none;
+  font-size: 13px;
+  color:  var(--text-color);
+  margin-right: 15px;
+}
+.news__link a:hover{
+  color: var(--primary-color);
+  transition: all 0.2s linear;
+}
+.news__ct{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.col-4{
+  width: 25%;
+  padding: 4px;
+}
+.news__ct-cart{
+  background-color: var(--white-color);
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,.125);
+  
+}
+.news__ct-hd{
+  margin-top: 10px;
+  padding: 10px;
+}
+.news__ct-hd-link{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 12px;
+}
+.news__ct-img > a > img{
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.news__ct-p{
+  margin-top: 5px;
+  padding: 10px;
+}
+.news__ct-p p {
+  font-size: 15px;
+  color: var(--text-color);
+}
+.page{
+  margin-top: 30px;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+.pagination-item{
+  width: 30px;
+  height: 35px;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  text-align: center;
+  line-height: 35px;
+}
+.pagination-item a{
+  text-decoration: none;
+}
+.actived-item{
+  background-color: var(--primary-color);
+}
+.bd-tl-bl{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.bd-tr-br{
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* Chi tiet bai viet*/
+.news__container{
+  background-color: var(--white-color);
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+.news__heading h1{
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 500;
+}
+.news__heading-list{
+  display: flex;
+}
+.news__heading-list li{
+  margin-right: 2px;
+  color: var(--text-color);
+  font-size: 15px;
+  margin-top: 10px;
+}
+.news__tb-ct{
+  margin-top: 30px;
+  border: 1px solid red;
+  border-style: dashed;
+  border-radius: 4px;
+  padding: 15px;
+}
+.news__tb-ct-list{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.news__tb-ct-link{
+  text-decoration: none;
+  color: #0077b7;
+  font-size: 15px;
+}
+.news__container img{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.news__container p {
+  font-size: 16px;
+  color: var(--text-color);
+}
+.news__container h3{
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.news__container h2{
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.news__container ul li a {
+  text-decoration: none; 
+  margin-top: 10px;
+  display: block;
+  font-size: 16px;
+  margin-left: 15px;
+  color: #0077b7;
+}
 /* mobile */
 @media only screen and (max-width: 740px) {
   /* Local */
@@ -1323,6 +1471,31 @@
     top: 8%;
     border-color: transparent transparent #0077b7 transparent;
   }
+
+  /*Tin tức */
+  .news__ct{
+    display: initial;
+  }
+  .col-4{
+    width: 100%;
+  }
+  .news__link{
+    flex-wrap: wrap;
+  }
+  .news{
+    padding: 10px;
+  }
+  .news__link a{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .news__heading h1{
+    line-height: 35px;
+  }
+  .news__heading-list li{
+    font-size: 13px;
+  }
 }
 /* tablet */
 @media only screen and (min-width: 741px) and (max-width: 1023px) {
@@ -1335,5 +1508,11 @@
   .cart__info-promo {
     height: auto;
   }
-  /* Thong tin gh */
+  /* tin tức*/
+  .col-4{
+    width: 50%;
+  }
+  .news{
+    padding: 10px;
+  }
 }
