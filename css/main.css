@@ -674,7 +674,7 @@
   transition: 0.4s;
 }
 
-.order__info-item.border{
+.order__info-item.border {
   border-bottom: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
@@ -733,102 +733,102 @@
   border-color: var(--primary-color);
 }
 /*Thong tin giao hang*/
-.wraper{
+.wraper {
   display: flex;
 }
-.info__ship{
+.info__ship {
   width: 50%;
   padding: 10px;
 }
-.ship__detail-hd{
+.ship__detail-hd {
   font-size: 25px;
   color: var(--text-color);
   margin-bottom: 10px;
 }
-.ship__detail-ct{
+.ship__detail-ct {
   font-size: 17px;
   margin-bottom: 20px;
   color: var(--text-color);
 }
-.i4__acc{
+.i4__acc {
   display: flex;
 }
-.i4__acc-avt{
+.i4__acc-avt {
   border-radius: 8px;
   width: 50px;
   height: 50px;
   margin-right: 15px;
 }
-.i4__acc-name p{
+.i4__acc-name p {
   font-size: 15px;
   color: var(--text-color);
   margin-bottom: 2px;
   margin-top: 2px;
 }
-.i4__acc-name a{
+.i4__acc-name a {
   text-decoration: none;
   color: #338dbc;
 }
-.feild__lable{
+.feild__lable {
   font-size: 13px;
   position: absolute;
   top: 2px;
   left: 14px;
   color: var(--text-color);
 }
-.feild{
+.feild {
   position: relative;
   width: 100%;
   margin-bottom: 10px;
 }
-.feildset{
+.feildset {
   margin-top: 35px;
 }
-.feild__lable{
+.feild__lable {
   color: #333333b8;
 }
-.feild__input{
+.feild__input {
   transition: all 0.2s ease-out;
   color: #333333;
   border-radius: 4px;
   width: 100%;
   word-break: normal;
-  border: 1px solid var(--border-color);    
+  border: 1px solid var(--border-color);
   padding: 10px;
 }
-.pd{
+.pd {
   padding: 20px 0 5px 10px;
 }
-.feild__input:focus{
+.feild__input:focus {
   border: 1px solid #0077b7;
 }
-.feild__choose{
+.feild__choose {
   display: flex;
   width: 100%;
 }
-.feild__address{
+.feild__address {
   position: relative;
   width: 100%;
 }
-.feild__address::before{
+.feild__address::before {
   content: "";
   position: absolute;
   top: 10px;
-  right:25px;
+  right: 25px;
   width: 1px;
   height: 25px;
   background-color: var(--border-color);
 }
-.location__shipping{
+.location__shipping {
   margin-top: 30px;
 }
-.change-title{
+.change-title {
   color: var(--text-color);
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 10px;
 }
-.content__box{
+.content__box {
   width: 100%;
   height: 55px;
   background-color: var(--white-color);
@@ -836,13 +836,13 @@
   border: 1px solid var(--border-color);
   position: relative;
 }
-.content__box-label{
+.content__box-label {
   font-size: 15px;
   color: var(--text-color);
   line-height: 55px;
   margin-left: 50px;
 }
-.content__box::before{
+.content__box::before {
   position: absolute;
   content: "";
   width: 20px;
@@ -852,7 +852,7 @@
   background-color: #0400ff;
   border-radius: 50%;
 }
-.content__box::after{
+.content__box::after {
   content: "0đ";
   position: absolute;
   right: 3%;
@@ -860,19 +860,19 @@
   color: var(--text-color);
   font-size: 15px;
 }
-.method__pay{
+.method__pay {
   margin-top: 40px;
 }
-.method__pay-title{
+.method__pay-title {
   font-size: 18px;
   color: var(--text-color);
   font-weight: 400;
 }
-.pay__box{
+.pay__box {
   margin-top: 20px;
   width: 100%;
 }
-.pay__box-item{
+.pay__box-item {
   width: 100%;
   background-color: var(--white-color);
   border: 1px solid var(--border-color);
@@ -881,17 +881,17 @@
   display: flex;
   margin-bottom: 5px;
 }
-.pay__box-item label{
+.pay__box-item label {
   font-size: 15px;
   color: var(--text-color);
   line-height: 80px;
 }
-.pay__box-img{
+.pay__box-img {
   width: 40px;
   height: 40px;
   margin: 20px 10px 0 0;
 }
-.input-check{
+.input-check {
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 10px;
@@ -904,41 +904,46 @@
   outline: 0;
   border: solid 1px #d9d9d9;
 }
-.complete{
+.complete {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
-.complete a{
+.complete a {
   text-decoration: none;
   font-size: 15px;
   color: #0077b7;
   align-self: center;
 }
-.btn-complete{
+.btn-complete {
   width: 150px;
   height: 50px;
   border-radius: 4px;
+  cursor: pointer;
 }
-.list__product{
+.btn-complete:hover {
+  background-color: transparent;
+  color: #000;
+}
+.list__product {
   width: 50%;
   margin-top: 20px;
   padding-left: 20px;
 }
-.product__pay{
+.product__pay {
   display: flex;
   margin-bottom: 10px;
 }
-.product__pay-thum{
+.product__pay-thum {
   position: relative;
   margin-right: 10px;
 }
-.product__pay-img{
+.product__pay-img {
   position: relative;
   border-radius: 4px;
   border: 1px solid var(--border-color);
 }
-.product__pay-number{
+.product__pay-number {
   position: absolute;
   top: -5px;
   right: -5px;
@@ -951,22 +956,22 @@
   text-align: center;
   color: var(--white-color);
 }
-.product__pay-title{
+.product__pay-title {
   font-size: 15px;
   color: var(--text-color);
   align-self: center;
 }
-.product__pay-price{
+.product__pay-price {
   align-self: center;
   font-size: 15px;
   color: var(--text-color);
   margin-left: 5px;
 }
-.product__sale-ct{
+.product__sale-ct {
   display: flex;
   justify-content: space-between;
 }
-.product__sale-ct input{
+.product__sale-ct input {
   border-radius: 4px;
   padding-left: 10px;
   font-size: 15px;
@@ -974,11 +979,11 @@
   border: 1px solid var(--border-color);
   width: 70%;
 }
-.product__sale-ct input:focus{
+.product__sale-ct input:focus {
   border: 1px solid #0077b7;
   transition: all 0.2s linear;
 }
-.btn-use{
+.btn-use {
   width: 130px;
   height: 40px;
   border: none;
@@ -986,33 +991,35 @@
   color: #fff;
   border-radius: 4px;
 }
-.actived-sale{
+.actived-sale {
   background-color: var(--primary-color);
 }
-.code__sale{
+.code__sale {
   display: flex;
   margin-top: 10px;
   justify-content: space-between;
+  align-items: center;
 }
-.code_ctn{
+.code_ctn {
   display: flex;
 }
-.code__sale .code_ctn svg{
+
+.code__sale .code_ctn svg {
   margin-top: 6px;
   margin-right: 5px;
 }
-#code__sale-item{
+#code__sale-item {
   display: flex;
 }
-#code__sale-item span{
+#code__sale-item span {
   position: relative;
   overflow: hidden;
 }
-.code__sale-ct{
+.code__sale-ct {
   font-size: 15px;
   color: var(--text-color);
 }
-#code__sale-item span::before{
+#code__sale-item span::before {
   content: "";
   display: block;
   width: 10px;
@@ -1026,7 +1033,7 @@
   border-radius: 50%;
   transform: translateY(-50%);
 }
-#code__sale-item span::after{
+#code__sale-item span::after {
   content: "";
   display: block;
   width: 10px;
@@ -1039,36 +1046,39 @@
   position: absolute;
   border-radius: 50%;
   transform: translateY(-50%);
-
 }
-.code__sale-label{
-  background-color:var(--white-color);
+.code__sale-label {
+  background-color: var(--white-color);
   padding: 5px 20px 5px 20px;
   margin-left: 10px;
   color: #0077b7;
   border: 1px solid #0077b7;
   border-radius: 4px;
   font-weight: 600;
+  cursor: pointer;
 }
-.price-ct{
+.code__sale-label.active {
+  border-color: var(--primary-color);
+  color: #000;
+}
+.price-ct {
   margin-top: 40px;
   position: relative;
 }
-.price-ct::before{
+.price-ct::before {
   position: absolute;
   content: "";
   top: -10px;
   width: 100%;
   height: 1px;
   background-color: var(--border-color);
-
 }
-.provi__price{
+.provi__price {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.tranf__fee{
+.tranf__fee {
   display: flex;
   justify-content: space-between;
 }
@@ -1080,13 +1090,13 @@
   color: var(--text-color);
   font-size: 15px;
 }
-.total__price-complete{
+.total__price-complete {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
   position: relative;
 }
-.total__price-complete::after{
+.total__price-complete::after {
   position: absolute;
   content: "";
   top: -10px;
@@ -1097,13 +1107,13 @@
 .total__price-complete p {
   font-size: 15px;
 }
-.total__price-complete span{
+.total__price-complete span {
   font-size: 20px;
 }
-.product-show-order{
+.product-show-order {
   display: none;
 }
-.product-hidden-order{
+.product-hidden-order {
   display: none;
 }
 
@@ -1408,53 +1418,42 @@
     margin-bottom: 0;
   }
   /* Thong tin gh */
-  .info__ship{
+  .info__ship {
     width: 100%;
     margin-top: 10px;
-    
   }
-  .product__pay{
+  .product__pay {
     display: none;
     margin-top: 10px;
   }
-  .wraper{
+  .wraper {
     flex-direction: column-reverse;
     padding: 20px;
   }
-  .ship__detail{
+  .ship__detail {
     margin-top: 20px;
   }
-  .ship__detail-hd{
+  .ship__detail-hd {
     display: none;
   }
 
-  .list__product{
+  .list__product {
     width: 100%;
-
   }
-  .feild__choose{
+  .feild__choose {
     display: initial;
   }
-  .feild__address{
+  .feild__address {
     margin-bottom: 10px;
   }
-  .product-show-order{
+  .product-show-order {
     color: #0077b7;
     cursor: pointer;
     margin-bottom: 20px;
     display: block;
     position: relative;
   }
-  .product-show-order::before{
-    position: absolute;
-    content: "";
-    border-width: 7px;
-    border-style: solid;
-    right: 62%;
-    top: 36%;
-    border-color: #0077b7 transparent transparent transparent;
-  }
-  .product-hidden-order{
+  .product-hidden-order {
     color: #0077b7;
     cursor: pointer;
     margin-bottom: 20px;
@@ -1462,7 +1461,7 @@
     position: relative;
     display: none;
   }
-  .product-hidden-order::after{
+  .product-hidden-order::after {
     position: absolute;
     content: "";
     border-width: 7px;
