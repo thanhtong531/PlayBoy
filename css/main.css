@@ -295,6 +295,11 @@
   border: 1px solid #ccc;
 }
 
+.category-item:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 .category-item__img {
   height: 85px;
 }
@@ -1120,6 +1125,7 @@
   padding: 8px;
   width: 100%;
 }
+
 /* mobile */
 @media only screen and (max-width: 740px) {
   /* Local */
@@ -1279,7 +1285,7 @@
     margin-top: 10px;
   }
   .product__pay {
-    display: none;
+    /* display: none; */
     margin-top: 10px;
   }
   .wraper {
@@ -1328,6 +1334,12 @@
   }
   .pay__box-item > label {
     font-size: 14px;
+  }
+  .product-list--buy {
+    display: none;
+  }
+  .product-list--buy.show {
+    display: block;
   }
 }
 /* tablet */

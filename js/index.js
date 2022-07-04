@@ -8,13 +8,27 @@ const minutesText = document.querySelector(".minutes");
 const secondsText = document.querySelector(".seconds");
 const timeCountDown = countDown?.dataset.time;
 const callToACtionbtns = document.querySelectorAll(".order__info-item");
-const showInfoOrder = document.querySelector(".product-show-order");
+const listProduct = document.querySelector(".list__product");
+const showInfoOrder = listProduct?.querySelector(".product-show-order");
 const productShow = document.querySelector(".product__pay");
+const showAllProduct = listProduct?.querySelector(".product-list--buy");
+const productShowHidden = listProduct?.querySelector(".product-hidden-order");
+let show = true;
+if (listProduct) {
+  showInfoOrder.addEventListener("click", function () {
+    if (show) {
+      showAllProduct.classList.toggle("show");
+      showInfoOrder.innerHTML = `Ẩn thông tin đơn hàng <i class="fa fa-caret-down" aria-hidden="true"></i> `;
+      show = false;
+    } else {
+      showAllProduct.classList.remove("show");
+      showInfoOrder.innerHTML = `Hiển thị thông tin đơn hàng <i class="fa fa-caret-down" aria-hidden="true"></i> `;
+      show = true;
+    }
+  });
+}
+
 const codeSaleLabel = document.querySelectorAll(".code__sale-label");
-// showInfoOrder.addEventListener("click", () => {
-//   console.log(productShow);
-//   productShow.style.display = "block";
-// });
 
 codeSaleLabel.forEach((item) => {
   item.addEventListener("click", (event) => {
